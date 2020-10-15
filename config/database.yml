@@ -49,6 +49,6 @@ test:
 #
 production:
   <<: *default
-  database: shopiglist2_production
-  username: shopiglist2
-  password: <%= ENV['SHOPIGLIST2_DATABASE_PASSWORD'] %>
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
